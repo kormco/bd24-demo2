@@ -24,7 +24,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 res.write('event: message\n');
                 res.write(`data: ${JSON.stringify(message)}`);
                 res.write("\n\n");
-                console.log('message rec ack_' + message.event.replayId);
+                //console.log('message rec ack_' + message.event.replayId);
           });
 
         req.socket.on('close', () => {

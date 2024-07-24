@@ -20,16 +20,16 @@ const BaseballScoreboard = ({homeScore = 0,
             </div>
             <div className="grid grid-cols-2 gap-2">
                 <div className="grid grid-cols-2 gap-22">
-                    <div className="text-lg font-semibold mb-4">Inning</div>
-                    <div className="text-lg font-semibold mb-4">{inning}</div>
-                    <div className="text-lg font-semibold mb-4">Outs</div>
-                    <div className="text-lg font-semibold mb-4">{outs}</div>
-                </div>
-                <div className="grid grid-cols-2 gap-22">
                     <div className="text-lg font-semibold mb-4">Balls</div>
                     <div className="text-lg font-semibold mb-4">{balls}</div>
                     <div className="text-lg font-semibold mb-4">Strikes</div>
                     <div className="text-lg font-semibold mb-4">{strikes}</div>
+                </div>
+                <div className="grid grid-cols-2 gap-22">
+                    <div className="text-lg font-semibold mb-4">Outs</div>
+                    <div className="text-lg font-semibold mb-4">{outs}</div>
+                    <div className="text-lg font-semibold mb-4">Inning</div>
+                    <div className="text-lg font-semibold mb-4">{inning}</div>
                 </div>
             </div>
         </section>

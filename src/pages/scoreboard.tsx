@@ -20,25 +20,28 @@ const Home: NextPage = () => {
         const eventSource = new EventSource('/api/scoreboard');
         eventSource.onopen = () => {
           console.log('SSE connection opened.');
-          // Save the SSE connection reference in the state
+          
         };
         eventSource.onmessage = (event) => {
-            if (event.data) {
-                //console.info('Received SSE Update:', event.data);
-                const payload = JSON.parse(event.data).payload;
-                setHomeScore(payload.Home_Score__c);
-                setAwayScore(payload.Away_Score__c);
-                setOuts(payload.Out_Count__c);
-                setInning(payload.Inning__c);
-                setBalls(payload.Ball_Count__c);
-                setStrikes(payload.Strike_Count__c);
-            }
+          if (event.data) {
+              //console.info('Received SSE Update:', event.data);
+              const payload = JSON.parse(event.data).payload;
+              console.error('New play found, updating score..');
+              setHomeScore(payload.Home_Score__c);
+              setAwayScore(payload.Away_Score__c);
+              setOuts(payload.Out_Count__c);
+              setInning(payload.Inning__c);
+              setBalls(payload.Ball_Count__c);
+              setStrikes(payload.Strike_Count__c);
+          }
         };
         eventSource.onerror = (event) => {
           console.error('SSE Error:', event);
           // Handle the SSE error here
         };
+
         setSSEConnection(eventSource);
+        
         return eventSource;
       }, []);
       const close = useEffect(() => { 
