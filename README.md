@@ -30,7 +30,15 @@ This repository contains a full stack JavaScript app powered by react + node con
 
 1. [Generate a NextAuth Secret](https://generate-secret.vercel.app/32)
 2. Create a connected app in your dev org enabled for OAuth, Device Flow, add all scopes (only for dev) 
-3. you can use this app: https://generate-secret.vercel.app/32Create a new file for your local environment called ```.env.local``` in the root folder with the following settings:
+3. Clone the git project locally and install dependencies from npm, then run the server
+   ```
+    git clone https://github.com/kormco/bd24-demo2.git
+    cd bd24-demo2
+    npm install
+    npm run dev
+   ```
+
+4. Create a new file for your local environment called ```.env.local``` in the root folder with the following settings:
 
    ```
     SALESFORCE_CLIENT_ID=YOUR_CLIENT_KEY
@@ -40,15 +48,6 @@ This repository contains a full stack JavaScript app powered by react + node con
     NEXTAUTH_URL=http://localhost:3000
     NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET
     ```
-
-4. Clone the git project locally and install dependencies from npm, then run the server
-   ```
-    git clone https://github.com/kormco/bd24-demo2.git
-    cd salesforce-next-auth
-    npm install
-    npm run dev
-   ```
-
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to open the home page and sign-in.
 
 
