@@ -43,7 +43,7 @@ This repository contains a full stack JavaScript app powered by react + node con
 
 4. Clone the git project locally and install dependencies from npm, then run the server
    ```
-    git clone https://github.com/pelayochristian/salesforce-next-auth.git
+    git clone https://github.com/kormco/bd24-demo2.git
     cd salesforce-next-auth
     npm install
     npm run dev
