@@ -1,5 +1,5 @@
 # Buckeye Dreamin' 24 - JavaScript Beyond LWC
-### A [Presentation](https://github.com/kormco/ek-BD24-js/blob/main/demo-assets/JavaScript%20beyond%20LWC%20-%20Kormos%20-%20Buckeye%20Dreamin%202024.pdf) by [Evan Kormos](https://www.linkedin.com/in/evankormos)
+### A [Presentation](https://github.com/kormco/ek-BD24-js/blob/main/demo-assets/JavaScript%20beyond%20LWC%20-%20Kormos%20-%20Buckeye%20Dreamin%202024.pdf)
 
 This repository contains a full stack JavaScript app powered by react + node connected to Salesforce using streaming and REST APIs using jsforce and other packages.  This is the app labeled Demo #2 in the presentation and is a sample application provided for educational purposes as-is with no warranty or guarantee.
 
