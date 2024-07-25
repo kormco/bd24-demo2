@@ -3,6 +3,7 @@
 
 This repository contains a full stack JavaScript app powered by react + node connected to Salesforce using streaming and REST APIs using jsforce and other packages.  This is the app labeled Demo #2 in the presentation and is a sample application provided for educational purposes as-is with no warranty or guarantee.
 
+
 ### Demo
 
 - Landing Page
@@ -27,6 +28,9 @@ This repository contains a full stack JavaScript app powered by react + node con
 -   [x] [Flowbite React Components](https://flowbite-react.com/)
 
 ### How to Run
+
+
+Assumes local nodejs and git development environment.  Please install nodejs and git client before proceeding.
 
 1. [Generate a NextAuth Secret](https://generate-secret.vercel.app/32)
 2. Create a connected app in your dev org enabled for OAuth, Device Flow, add all scopes (only for dev) 
