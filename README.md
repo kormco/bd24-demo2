@@ -52,3 +52,5 @@ This reposntory contains a full stack JavaScript app powered by react + node con
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to open the home page and sign-in.
 
 
+Prior work on Next/Next-Auth with Salesforce reference project by [Christian Pelayo](https://github.com/pelayochristian/salesforce-next-auth)
+
